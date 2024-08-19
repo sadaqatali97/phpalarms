@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-BlackItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-ExtraBold.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-BoldItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Bold.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Black.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Italic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Heavy.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-HeavyItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Light.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-LightItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-ExtraLight.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Regular.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-MediumItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Medium.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-SemiBold.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-ThinItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesqueAlt-Thin.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesqueAlt-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Black.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Bold.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-BlackItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-BoldItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-ExtraBold.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-ExtraLight.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Italic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-HeavyItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Heavy.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-LightItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Light.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Medium.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Regular.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-MediumItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-SemiBold.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-ThinItalic.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Thin.woff2') format('woff2'),
+    url('../fonts/GalanoGrotesque-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
