@@ -336,7 +336,8 @@ ul {
 /*--- Features Section Style Start ---*/
 .features-section {
     padding: 100px 0;
-    background-image: radial-gradient(circle at center center, #0099f2 0%, #233e85 50%);
+    /*background-image: radial-gradient(circle at center center, #0099f2 0%, #233e85 50%);*/
+    background-image: var(--dark-gradient);
 }
 
 .features-section h2 {
@@ -607,9 +608,10 @@ ul {
 .products-section {
     padding: 140px 0;
     background-color: #222529;
-    background-image: var(--primary-gradient);
+    /*background-image: var(--primary-gradient);*/
     background-position: center center;
     background-repeat: no-repeat;
+    background-image: var(--dark-gradient);
 }
 
 .products-section ul {
@@ -1207,9 +1209,9 @@ footer ul {
     visibility: hidden;
     bottom: 0;
     transition: 0.35s all ease-in-out;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none !important;
 }
 
 .mobile-strip.show {
