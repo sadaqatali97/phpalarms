@@ -13,30 +13,7 @@
 //     }
 // });
 //
-//
-// var swiper = new Swiper(".reviews-slider", {
-//     slidesPerView: 1.3,
-//     spaceBetween: 10,
-//     centeredSlides: false,
-//     loop: false,
-//     autoplay: {
-//         delay: 5000,
-//         disableOnInteraction: false,
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     breakpoints: {
-//         992: {
-//             slidesPerView: 3,
-//         },
-//         768: {
-//             slidesPerView: 3,
-//             spaceBetween: 10
-//         },
-//     },
-// });
+
 //
 //
 // // document.addEventListener('DOMContentLoaded', function() {
@@ -81,17 +58,17 @@ function headerControl() {
             navbarToggler.setAttribute('aria-expanded', 'false');
         }
 
-        // function setActiveLink() {
-        //     let fromTop = window.scrollY + 100;
-        //     navLinks.forEach(link => {
-        //         let section = document.querySelector(link.getAttribute('href'));
-        //         if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-        //             link.classList.add('active');
-        //         } else {
-        //             link.classList.remove('active');
-        //         }
-        //     });
-        // }
+        function setActiveLink() {
+            let fromTop = window.scrollY + 100;
+            navLinks.forEach(link => {
+                let section = document.querySelector(link.getAttribute('href'));
+                if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
 
         navbarToggler.addEventListener('click', function () {
             if (!navbarCollapse.classList.contains('show')) {
@@ -140,8 +117,8 @@ function headerControl() {
             });
         }
 
-        // window.addEventListener('scroll', setActiveLink);
-        // setActiveLink(); // Set the active link on page load
+        window.addEventListener('scroll', setActiveLink);
+        setActiveLink(); // Set the active link on page load
 
         // Check URL hash on page load
         const hash = window.location.hash;

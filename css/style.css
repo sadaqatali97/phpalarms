@@ -179,7 +179,7 @@ ul {
 
 .navbar-nav a:hover,
 .navbar-nav a.active {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-color) !important;
 }
 
@@ -444,7 +444,7 @@ ul {
 
 .package-card img {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .package-card h3 {
@@ -680,7 +680,7 @@ ul {
     padding: 140px 0;
     background-color: rgb(6, 6, 7);
     background-image: linear-gradient(90deg, rgba(6, 6, 7, 0.9) 47%, rgba(6, 6, 7, 0.3) 76%),
-    url(../images/Newheaderimage-technician.jpg);
+    url(../images/family-father-mother-son-daughter-kid-studio-photo-white-background.jpg);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1075,10 +1075,88 @@ ul {
 
 /*--- Web Text Section Style End ---*/
 
+/*--- Contact Section Style Start ---*/
+.contact-header {
+    padding: 80px 0 60px 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-section {
+    padding-bottom: 60px;
+}
+.contact-section,
+.contact-header{
+    color: var(--text-color);
+}
+
+.contact-section .container {
+    max-width: 1100px;
+}
+
+.contact-form {
+    border-radius: 25px;
+}
+
+.contact-section label,
+.contact-section h4,
+.contact-section h3 {
+    color: var(--text-color);
+}
+
+.contact-link-card {
+    padding: 20px;
+    box-shadow: 0 2px 11px 0 rgba(31, 37, 89, .08);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #eff0f6;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+    transition: 0.35s all ease-in-out;
+    position: relative;
+    top: 5px;
+}
+
+.contact-link-card + .contact-link-card {
+    margin-top: 25px;
+}
+
+.contact-link-card:hover {
+    top: 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.contact-link-card svg,
+.contact-link-card i {
+    font-size: 30px;
+    color: var(--text-color);
+    transition: 0.35s all ease-in-out;
+    display: inline-block;
+}
+
+.contact-link-card:hover svg,
+.contact-link-card:hover i {
+    color: var(--color-white);
+}
+
+.contact-link-card span {
+    font-size: 14px;
+    display: block;
+    margin-top: 7px;
+    font-weight: 400;
+}
+
+/*--- Contact Section Style End ---*/
+
 /*--- Footer Style Start ---*/
 
 footer {
-    padding: 0 0 100px 0;
+    padding: 0 0 30px 0;
     border-top: 1px solid #dee2e6;
 }
 
@@ -1483,6 +1561,10 @@ footer ul {
     .logos-row {
         gap: 20px;
     }
+
+    .contact-header {
+        padding: 50px 0 40px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1626,9 +1708,6 @@ footer ul {
         font-size: 24px;
     }
 
-    .hero-section + .features-section {
-        padding-top: 0;
-    }
     .highlighted-text svg {
         width: 100%;
         height: 100%;
