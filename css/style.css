@@ -1064,6 +1064,7 @@ ul {
 .web-text-section .text-main-content a {
     color: var(--color-primary);
     text-decoration: underline;
+    word-break: break-all;
 }
 
 .web-text-section .text-main-content a:hover {
