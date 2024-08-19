@@ -1611,4 +1611,7 @@ footer ul {
     .offer-row p {
         font-size: 24px;
     }
+    .hero-section + .features-section {
+        padding-top: 0;
+    }
 }
