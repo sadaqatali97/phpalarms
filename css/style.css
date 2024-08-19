@@ -1240,6 +1240,10 @@ footer ul {
 }
 
 @media (max-width: 991px) {
+    .web-wrapper:before {
+        height: 72px;
+    }
+
     .navbar {
         flex-wrap: nowrap;
     }
@@ -1472,6 +1476,7 @@ footer ul {
     .web-text-section {
         padding: 50px 0;
     }
+
     .logos-row {
         gap: 20px;
     }
@@ -1582,7 +1587,7 @@ footer ul {
     }
 
     .service-info p,
-    .offer-section span {
+    .offer-section .offer-info span {
         font-size: 18px;
     }
 
@@ -1590,28 +1595,63 @@ footer ul {
         margin-bottom: 15px;
         font-size: 16px;
     }
+
     .monitoring-section p,
     .packages-section p,
     .get-started-section p {
         font-size: 16px;
     }
+
     .products-section li {
         gap: 10px;
     }
+
     .offer-section li {
         gap: 5px;
     }
+
     .offer-section li:before {
         font-size: 18px;
     }
+
     .feature-icon img {
         width: 35px;
         height: 35px;
     }
+
     .offer-row p {
         font-size: 24px;
     }
+
     .hero-section + .features-section {
         padding-top: 0;
+    }
+    .highlighted-text svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 374px) {
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .service-card .service-info {
+        font-size: 17px;
+    }
+
+    .features-section h2 {
+        font-size: 22px;
+    }
+
+    .packages-section h2, .offer-section h2, .get-started-section h2 {
+        font-size: 32px;
+    }
+    .review-info p {
+        font-size: 20px;
+    }
+    .author {
+        font-size: 16px;
     }
 }
