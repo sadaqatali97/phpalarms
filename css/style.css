@@ -4,8 +4,6 @@
     --body-fonts: 'Galano Grotesque';
 
     --text-color: #000000;
-    /*--color-primary: #bf0a30;*/
-    /*--color-primary-dark: #a80d2d;*/
 
     --color-primary: #233e85;
     --color-primary-dark: #193274;
@@ -14,7 +12,6 @@
 
     --highlighted-color: #ffeb3b;
 
-    /*--primary-gradient: radial-gradient(circle at right center, rgb(191, 10, 48) 0%, rgb(132, 6, 36) 64%);*/
 
     --dark-gradient: radial-gradient(60.73% 68.03% at 70.13% 45.83%, #0a2960 0, #071938 43.09%, #040404 80%);
     --primary-gradient: linear-gradient(61deg, #0099f2 0%, #233e85 100%);
@@ -120,6 +117,18 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.bg-grey-gradient {
+    background-image: var(--grey-gradient) !important;
+}
+
+.bg-dark-gradient {
+    background-image: var(--dark-gradient) !important;
+}
+
+.bg-primary-gradient {
+    background-image: var(--primary-gradient) !important;
 }
 
 /*--- Body Style End ---*/
@@ -383,12 +392,19 @@ ul {
 .feature-video {
     max-width: 1000px;
     margin: 50px auto;
+    position: relative;
+    padding-bottom: 48%;
 }
 
-.feature-video video {
+.feature-video video,
+.feature-video iframe {
     width: 100%;
     height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
+
 
 .offer-row {
     display: flex;
@@ -906,6 +922,7 @@ ul {
     position: relative;
     padding-bottom: 30px;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .services-section .row:after {
@@ -926,6 +943,10 @@ ul {
 
 .services-section .row:last-child:after {
     content: none;
+}
+
+.service-icon img {
+    width: 70%;
 }
 
 /*--- Services Section Style End ---*/
@@ -1082,11 +1103,13 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
+
 .contact-section {
     padding-bottom: 60px;
 }
+
 .contact-section,
-.contact-header{
+.contact-header {
     color: var(--text-color);
 }
 
@@ -1153,10 +1176,147 @@ ul {
 
 /*--- Contact Section Style End ---*/
 
+/*--- Inner Hero Style Start ---*/
+.inner-hero {
+    padding: 140px 0;
+    background-image: radial-gradient(circle, rgba(0, 153, 242, 0.6) 0%, rgb(35, 62, 133) 87%),
+    url("https://www.fortknoxhomesecurity.com/wp-content/uploads/2020/05/home-security-packages-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inner-hero h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.inner-hero p {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.inner-hero-img p {
+    font-size: 12px;
+    text-align: center;
+}
+
+/*--- Inner Hero Style End ---*/
+
+/*--- Packages Detail Section Style Start ---*/
+.packages-detail-section {
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: cover;
+}
+
+.packages-detail-section h3 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.packages-detail-section p {
+    font-size: 20px;
+    line-height: 1.125;
+    margin-bottom: 10px;
+}
+
+.packages-detail-section ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.packages-detail-section li {
+    width: 48%;
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.packages-detail-section li:before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 22px;
+    color: var(--color-white);
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.packages-detail-section .highlighted-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+.packages-detail-section .text-sm {
+    display: block;
+}
+
+.package-lg-img {
+    position: relative;
+    z-index: 1;
+}
+
+.package-lg-img:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle at center center, rgba(255, 255, 255, 0.5) 0%, transparent 65%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*--- Packages Detail Section Style End ---*/
+
+/*--- Why Us Section Style Start ---*/
+.why-us-section {
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: cover;
+}
+.why-us-section h2 {
+    font-size: 50px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+}
+.why-us-col {
+    display: flex;
+    gap: 15px;
+}
+/*--- Why Us Section Style End ---*/
+
 /*--- Footer Style Start ---*/
 
 footer {
-    padding: 0 0 30px 0;
+    padding: 0;
     border-top: 1px solid #dee2e6;
 }
 
@@ -1166,6 +1326,29 @@ footer {
 
 .ftr-logo img {
     width: 100%;
+}
+
+.contacts-ftr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts-ftr a {
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.contacts-ftr a + a:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .newsletter-form {
@@ -1301,6 +1484,16 @@ footer ul {
 .mobile-strip .btn {
     width: auto;
     text-decoration: none !important;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    background-color: var(--color-primary);
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    color: var(--color-white);
 }
 
 /*--- Footer Style End ---*/
@@ -1615,7 +1808,8 @@ footer ul {
     }
 
     .feature-video {
-        margin-top: 30px;
+        margin: 15px auto;
+        padding-bottom: 56%;
     }
 
     .package-card h3 {
@@ -1712,6 +1906,24 @@ footer ul {
         width: 100%;
         height: 100%;
     }
+
+    .social-list,
+    footer ul {
+        gap: 5px;
+    }
+
+    .services-section .row {
+        align-items: flex-start;
+    }
+
+    .offer-row .highlighted-text {
+        font-size: 95%;
+    }
+
+    .offer-row .highlighted-text > span:first-child {
+        margin-bottom: 20px;
+        display: block;
+    }
 }
 
 @media (max-width: 374px) {
@@ -1730,9 +1942,11 @@ footer ul {
     .packages-section h2, .offer-section h2, .get-started-section h2 {
         font-size: 32px;
     }
+
     .review-info p {
         font-size: 20px;
     }
+
     .author {
         font-size: 16px;
     }
