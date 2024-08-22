@@ -131,6 +131,10 @@ ul {
     background-image: var(--primary-gradient) !important;
 }
 
+.text-sm {
+    font-size: 12px !important;
+}
+
 /*--- Body Style End ---*/
 
 /*--- Header Style Start ---*/
@@ -1259,10 +1263,6 @@ ul {
     display: inline-block;
 }
 
-.text-sm {
-    font-size: 12px;
-}
-
 .packages-detail-section .text-sm {
     display: block;
 }
@@ -1296,22 +1296,77 @@ ul {
 /*--- Why Us Section Style Start ---*/
 .why-us-section {
     padding: 100px 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--color-primary);
     background-position: center center;
     background-repeat: no-repeat;
     background-blend-mode: screen;
     background-size: cover;
 }
+
 .why-us-section h2 {
     font-size: 50px;
     line-height: 1.25;
     margin-bottom: 40px;
 }
+
 .why-us-col {
     display: flex;
     gap: 15px;
 }
+
+.why-icon {
+    width: 80px;
+    flex: 0 0 80px;
+}
+
+.why-us-col span {
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.why-us-col p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /*--- Why Us Section Style End ---*/
+
+/*--- Add Ons Section Style Start ---*/
+.add-ons-section {
+    padding: 100px 0;
+}
+
+.add-ons-section h2 {
+    font-size: 30px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.add-ons-section h2 strong {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.add-ons-section p {
+    color: var(--color-primary);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.add-on-card {
+    text-align: center;
+}
+
+.add-on-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    margin-bottom: 7px;
+}
+
+/*--- Add Ons Section Style End ---*/
 
 /*--- Footer Style Start ---*/
 
@@ -1510,6 +1565,28 @@ footer ul {
 
     .hero-section p {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-brand {
+        width: 220px;
+    }
+
+    .header .navbar-nav {
+        gap: 6px;
+    }
+
+    .btn-nav-inside {
+        margin-left: 20px;
+    }
+
+    .btn {
+        padding: 13px 20px;
+    }
+
+    .inner-hero h1 {
+        font-size: 64px;
     }
 }
 
@@ -1789,13 +1866,17 @@ footer ul {
     .offer-section,
     .testimonials-section,
     .services-section,
-    .get-started-section {
+    .get-started-section,
+    .packages-detail-section,
+    .why-us-section,
+    .add-ons-section {
         padding: 60px 0;
     }
 
     .packages-section h2,
     .offer-section h2,
-    .get-started-section h2 {
+    .get-started-section h2,
+    .why-us-section h2 {
         font-size: 36px;
     }
 
@@ -1923,6 +2004,56 @@ footer ul {
     .offer-row .highlighted-text > span:first-child {
         margin-bottom: 20px;
         display: block;
+    }
+
+    .inner-hero {
+        padding: 80px 0;
+    }
+
+    .inner-hero h1 {
+        font-size: 46px;
+        line-height: 1;
+    }
+
+    .inner-hero p {
+        font-size: 22px;
+    }
+
+    .packages-detail-section h3 {
+        font-size: 36px;
+    }
+
+    .packages-detail-section p {
+        font-size: 16px;
+    }
+
+    .packages-detail-section .highlighted-text {
+        font-size: 18px;
+    }
+
+    .packages-detail-section li {
+        font-size: 14px;
+    }
+
+    .why-us-col {
+        gap: 10px;
+    }
+
+    .why-icon {
+        width: 60px;
+        flex: 0 0 60px;
+    }
+    .why-us-col span {
+        font-size: 18px;
+    }
+    .why-us-col p {
+        font-size: 16px;
+    }
+    .add-ons-section h2 {
+        font-size: 24px;
+    }
+    .add-ons-section h2 strong {
+        font-size: 36px;
     }
 }
 
